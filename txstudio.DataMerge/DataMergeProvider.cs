@@ -56,26 +56,26 @@ namespace txstudio.DataMerge
             }
         }
 
-        public void Merge(IEnumerable<T> target, IEnumerable<T> source)
+        public void Merge(IEnumerable<T> targets, IEnumerable<T> sources)
         {
             if (this._option.GetCreatedList == true
                 || this._option.GetUpdatedList == true)
             {
-                foreach (var item in source)
+                foreach (var source in sources)
                 {
-                    var _match = target.Where(x => x.KeyEquals(item) == true).FirstOrDefault();
+                    var _match = targets.Where(x => x.KeyEquals(source) == true).FirstOrDefault();
 
                     if (_match == null)
                     {
                         if (this._option.GetCreatedList == true)
-                            this._createdList.Add(item);
+                            this._createdList.Add(source);
                     }
                     else
                     {
-                        if (_match.Equals(item) == false)
+                        if (_match.Equals(source) == false)
                         {
                             if (this._option.GetUpdatedList == true)
-                                this._updatedList.Add(item);
+                                this._updatedList.Add(source);
                         }
                     }
                 }
@@ -84,12 +84,12 @@ namespace txstudio.DataMerge
             if (this._option.GetDeletedList == false)
                 return;
 
-            foreach (var item in target)
+            foreach (var target in targets)
             {
-                var _match = source.Where(x => x.KeyEquals(item) == true).FirstOrDefault();
+                var _match = sources.Where(x => x.KeyEquals(target) == true).FirstOrDefault();
 
                 if (_match == null)
-                    this._deletedList.Add(item);
+                    this._deletedList.Add(target);
             }
         }
     }
