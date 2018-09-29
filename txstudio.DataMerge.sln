@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "txstudio.DataMerge", "txstudio.DataMerge\txstudio.DataMerge.csproj", "{7017746B-948F-4BF7-8591-450EA272530B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{BA1851BC-62DE-4C35-BF7B-2549624774BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7017746B-948F-4BF7-8591-450EA272530B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7017746B-948F-4BF7-8591-450EA272530B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7017746B-948F-4BF7-8591-450EA272530B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7017746B-948F-4BF7-8591-450EA272530B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA1851BC-62DE-4C35-BF7B-2549624774BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1851BC-62DE-4C35-BF7B-2549624774BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1851BC-62DE-4C35-BF7B-2549624774BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1851BC-62DE-4C35-BF7B-2549624774BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {187D811B-8877-46EB-A00D-78A00583224A}
+	EndGlobalSection
+EndGlobal
